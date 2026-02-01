@@ -94,6 +94,6 @@ cat <<EOF
   "browser": "${BROWSER}",
   "port": ${LOCAL_PORT},
   "url": "${OPEN_URL}",
-  "access_url": "https://$(hostname).lan:${LOCAL_PORT}"
+  "access_url": "https://$(hostname).$(hostname -d):${LOCAL_PORT}"
 }
 EOF
